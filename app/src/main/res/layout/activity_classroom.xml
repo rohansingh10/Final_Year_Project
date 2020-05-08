@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/playground"
-    tools:context=".PlaygroundActivity">
+    android:background="@drawable/classroom"
+    tools:context=".ClassroomActivity">
 
     <TextView
-        android:id="@+id/playgrounddisplay"
+        android:id="@+id/classroomdisplay"
         android:layout_width="406dp"
         android:layout_height="78dp"
         android:layout_marginStart="8dp"
@@ -21,30 +21,11 @@
         android:gravity="center_horizontal" />
 
     <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/kidf"
-        android:layout_width="170dp"
-        android:layout_height="289dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@null"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.282"
-        app:layout_constraintStart_toEndOf="@+id/kid"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.323" />
-
-    <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/activity1"
         android:layout_width="149dp"
         android:layout_height="104dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@null"
@@ -53,14 +34,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.745" />
+        app:layout_constraintVertical_bias="0.989" />
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/activity3"
         android:layout_width="149dp"
         android:layout_height="104dp"
-        android:layout_marginStart="128dp"
-        android:layout_marginLeft="128dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginLeft="208dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@null"
@@ -69,15 +50,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.942" />
+        app:layout_constraintVertical_bias="0.989" />
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/activity2"
         android:layout_width="149dp"
         android:layout_height="104dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginRight="44dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:layout_marginBottom="8dp"
         android:background="@null"
         android:onClick="keep"
@@ -85,14 +66,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.746" />
+        app:layout_constraintVertical_bias="0.989" />
 
     <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/kid"
-        android:layout_width="170dp"
-        android:layout_height="289dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:id="@+id/classkidandteacher"
+        android:layout_width="244dp"
+        android:layout_height="375dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginLeft="152dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@null"
@@ -100,6 +81,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.323" />
+        app:layout_constraintVertical_bias="0.655" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

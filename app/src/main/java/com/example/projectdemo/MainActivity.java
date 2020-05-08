@@ -1,7 +1,5 @@
 package com.example.projectdemo;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -61,6 +61,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void goToPlayground(View view) {
         Intent intent=new Intent(this,PlaygroundActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToClassroom(View view) {
+        Intent intent=new Intent(this,ClassroomActivity.class);
+        startActivity(intent);
+    }
+    public void goToSocialStory(View view){
+        Intent intent=new Intent(this,SocialStory.class);
         startActivity(intent);
     }
 }
