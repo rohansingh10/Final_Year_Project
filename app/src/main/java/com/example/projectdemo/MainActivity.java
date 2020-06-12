@@ -72,4 +72,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(this,SocialStory.class);
         startActivity(intent);
     }
+
+    public void goToSound(View view) {
+        Intent intent=new Intent(this, sound.class);
+        startActivity(intent);
+    }
 }

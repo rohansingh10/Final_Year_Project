@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,11 +24,10 @@ public class ClassroomActivity extends AppCompatActivity {
     MediaPlayer sing1;
     private String[] kidm={"classexcited","classcry","classhappy","classsad","classangry"};
     //private String[] kidf={"girlhappy","girlsmile","girlangry","girlcry","girlplay"};
-    int id,idf;
+    int id,idf,td;
     ImageButton boyandteach;
-    ImageButton ib1;
-    ImageButton ib2;
-    ImageButton ib3;
+    Button ib1;
+    Button ib2;
     ImageButton girl;int flag=0,cry=0;
     SharedPreferences pref;
     Context context;
@@ -52,21 +52,44 @@ public class ClassroomActivity extends AppCompatActivity {
         double randomDouble = Math.random();
         ib1=findViewById(R.id.activity1);
         ib2=findViewById(R.id.activity2);
-        ib3=findViewById(R.id.activity3);
-
+        boyandteach = findViewById(R.id.classkidandteacher);
         ib1.setEnabled(false);
         ib2.setEnabled(false);
-        ib3.setEnabled(false);
         randomDouble = randomDouble * (kidm.length+1);
         randomInt = (int) randomDouble;
         if(randomInt==5) {
-            boyandteach = findViewById(R.id.classkidandteacher);
+            double r = Math.random();
+            r = r * (kidm.length);
+            td = (int) r;
             boyandteach.setImageResource(R.drawable.teachernormal);
+            if(td==1)
+            {
+                classdisplay.setText("Good Morning");
+                ib1.setText("Good Morning Ma'am");
+                ib2.setText("Ignore her");
+            }
+            else if(td==2)
+            {
+                classdisplay.setText("How are you today?");
+                ib1.setText("I am fine. How are you?");
+                ib2.setText("Ignore her");
+            }
         }
         else {
             id = getResources().getIdentifier(kidm[randomInt], "drawable", getPackageName());
-            boyandteach = findViewById(R.id.classkidandteacher);
             boyandteach.setImageResource(id);
+            if(randomInt==0)
+            {
+                classdisplay.setText("It's my birthday!");
+                ib1.setText("Wish him!");
+                ib2.setText("Ignore him");
+            }
+            else if (randomInt==1)
+            {
+                classdisplay.setText("Shivam is sad");
+                ib1.setText("Console him");
+                ib2.setText("Tell him not to bother you");
+            }
         }
 
     }

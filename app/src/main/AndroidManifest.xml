@@ -26,6 +26,8 @@
         <activity android:name=".PlaygroundActivity"></activity>
         <activity android:name=".ClassroomActivity"></activity>
         <activity android:name=".SocialStory"></activity>
+        <activity android:name=".activity2"></activity>
+        <activity android:name=".sound"></activity>
     </application>
 
 </manifest>

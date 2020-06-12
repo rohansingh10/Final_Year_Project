@@ -13,67 +13,19 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center_horizontal" />
-
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/activity1"
-        android:layout_width="149dp"
-        android:layout_height="104dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@null"
-        android:onClick="share"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.989" />
-
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/activity3"
-        android:layout_width="149dp"
-        android:layout_height="104dp"
-        android:layout_marginStart="208dp"
-        android:layout_marginLeft="208dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@null"
-        android:onClick="special"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.989" />
-
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/activity2"
-        android:layout_width="149dp"
-        android:layout_height="104dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="8dp"
-        android:background="@null"
-        android:onClick="keep"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.989" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/classkidandteacher"
         android:layout_width="244dp"
         android:layout_height="375dp"
-        android:layout_marginStart="152dp"
-        android:layout_marginLeft="152dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@null"
@@ -81,6 +33,44 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.655" />
+        app:layout_constraintVertical_bias="0.27" />
+
+    <Button
+        android:id="@+id/activity1"
+        android:layout_width="178dp"
+        android:layout_height="107dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classkidandteacher"
+        app:layout_constraintVertical_bias="0.201"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/activity2"
+        android:layout_width="190dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="8dp"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/activity1"
+        app:layout_constraintTop_toBottomOf="@+id/classkidandteacher"
+        app:layout_constraintVertical_bias="0.222"
+        android:gravity="center_horizontal" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
